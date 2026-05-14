@@ -10,7 +10,7 @@
 html, body {
   margin: 0;
   width: 100%;
-  min-height: 320px;
+  height: 100%;
   background: transparent;
   font-family: Georgia, serif;
 }
@@ -59,13 +59,11 @@ button {
   /* MOBILE */
 
 @media (max-width: 600px) {
-  html, body {
-    min-height: 98px;
+body {
+    align-items: flex-start;
+    padding: 0;
   }
 
-  body {
-    padding-bottom: 0px;
-  }
 
   .player {
     max-width: 100%;
