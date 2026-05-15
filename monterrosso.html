@@ -98,6 +98,20 @@ input[type="range"] {
   accent-color: white;
   cursor: pointer;
 }
+  .mobile-note {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .mobile-note {
+    display: block;
+    margin-top: 10px;
+    font-size: 9px;
+    color: #777;
+    text-align: center;
+    font-family: Georgia, serif;
+  }
+}
 </style>
 </head>
 
@@ -120,6 +134,9 @@ input[type="range"] {
 </div>
 
 <script>
+  <div class="mobile-note">
+  Role para ler o texto.
+</div>
 const audio = document.getElementById("audio");
 const playBtn = document.getElementById("playBtn");
 const progress = document.getElementById("progress");
