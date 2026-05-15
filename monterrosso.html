@@ -103,13 +103,12 @@ input[type="range"] {
 }
 
 @media (max-width: 1000px) {
-  .mobile-note {
+ .mobile-note {
     display: block;
-    margin-top: 10px;
     font-size: 9px;
-    color: #777;
+    color: rgba(255,255,255,0.7);
+    margin-bottom: 6px;
     text-align: center;
-    font-family: Georgia, serif;
   }
 }
 </style>
@@ -121,6 +120,9 @@ input[type="range"] {
   <button id="playBtn">▶</button>
 
   <div class="info">
+    <div class="mobile-note">
+  Role para ler o texto ↓
+</div>
     <div class="progress-row">
       <span class="time" id="currentTime">0:00</span>
       <input type="range" id="progress" value="0" min="0" step="1">
